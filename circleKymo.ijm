@@ -50,6 +50,7 @@ run("Fire");
 run("Tile");
 
 // calibrate kymogram (width: length / height: time) 
+selectWindow("Kymograph");
 pixW_kymo=kymoLength/imW_kymo;
 run("Properties...", "channels=1 slices=1 frames=1 pixel_width="+pixW_kymo+" pixel_height="+timeInterval+" voxel_depth=0.1");
 Stack.setXUnit("microns");
